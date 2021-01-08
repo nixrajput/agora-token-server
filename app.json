@@ -1,0 +1,28 @@
+{
+  "name": "AgoraTokenServer",
+  "description": "Agora Token Server",
+  "keywords": [
+    "Agora",
+    "Agora.io",
+    "DynamicKey",
+    "ChannelKey",
+    "RecordingKey",
+    "video",
+    "voice",
+    "communications",
+    "recording",
+    "ARS"
+  ],
+  "website": "https://nixlab-llc.herokuapp.com/",
+  "repository": "https://github.com/nixrajput/agora-token-server.git",
+  "env": {
+    "APP_ID": {
+      "description": "Agora.io App ID: Login to the Agora.io Developer Dashboard (http://dashboard.agora.io), and navigate to the \"Projects\" tab to get this value",
+      "required": true
+    },
+    "APP_CERTIFICATE": {
+      "description": "Agora.io App Certificate: Login to the Agora.io Developer Dashboard (http://dashboard.agora.io), and navigate to the \"Projects\" tab to get this value",
+      "required": true
+    }
+  }
+}
