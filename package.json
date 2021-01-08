@@ -1,18 +1,25 @@
 {
-  "name": "agora-token-server",
-  "version": "0.0.1",
+  "name": "meetingzilla-server",
+  "version": "1.0.0",
+  "description": "[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/nixrajput/agora-token-server)",
   "main": "index.js",
-  "scripts": {
-    "start": "node index.js"
-  },
   "dependencies": {
     "agora-access-token": "^2.0.4",
     "express": "^4.17.1"
   },
-  "author": "Nikhil Kumar",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/nixrajput/agora-token-server.git"
+    "url": "git+https://github.com/nixrajput/agora-token-server.git"
   },
-  "license": "MIT"
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nixrajput/agora-token-server/issues"
+  },
+  "homepage": "https://github.com/nixrajput/agora-token-server#readme"
 }
