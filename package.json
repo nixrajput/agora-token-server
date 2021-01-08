@@ -9,15 +9,15 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node index.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nixrajput/agora-token-server.git"
+    "url": "https://github.com/nixrajput/agora-token-server.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Nikhil Kumar",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/nixrajput/agora-token-server/issues"
   },
