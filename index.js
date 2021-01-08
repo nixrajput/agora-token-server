@@ -1,6 +1,5 @@
 var express = require('express');
 var { RtcTokenBuilder, RtmTokenBuilder, RtcRole, RtmRole } = require('agora-access-token');
-var { Token, Priviledges } = AccessToken;
 
 var PORT = process.env.PORT || 8080;
 
@@ -9,6 +8,12 @@ if (!(process.env.APP_ID && process.env.APP_CERTIFICATE)) {
 }
 var APP_ID = process.env.APP_ID;
 var APP_CERTIFICATE = process.env.APP_CERTIFICATE;
+
+const expirationTimeInSeconds = 3600
+
+const currentTimestamp = Math.floor(Date.now() / 1000)
+
+const privilegeExpiredTs = currentTimestamp + expirationTimeInSeconds
 
 var app = express();
 
@@ -38,8 +43,7 @@ var generateAccessToken = function (req, resp) {
     }
 
     //var token = new Token(APP_ID, APP_CERTIFICATE, channel, uid);
-    const tokenA = RtcTokenBuilder.buildTokenWithUid(APP_ID, APP_CERTIFICATE,
-        channelName, uid, role, privilegeExpiredTs);
+    const tokenA = RtcTokenBuilder.buildTokenWithUid(APP_ID, APP_CERTIFICATE, channelName, uid, role, privilegeExpiredTs);
     return resp.json({ 'token': tokenA });
 };
 
